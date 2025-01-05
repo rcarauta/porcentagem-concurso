@@ -6,8 +6,8 @@ import pymongo
 import re
 
 driver = webdriver.Chrome()
-title_url = 'tecnologia-da-informacao-nocoes-de-informatica'
-disciplina = 'nocoesInformatica'
+title_url = 'direito-direito-eleitoral'
+disciplina = 'direitoEleitoral'
 driver.get("https://www.qconcursos.com/questoes-de-concursos/disciplinas/"+title_url)
 
 client = pymongo.MongoClient("mongodb://root:example@localhost:27017/")
