@@ -1,0 +1,21 @@
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb-container
+    ports:
+      - "27017:27017"  # Exposing MongoDB port externally
+    volumes:
+      - mongodb-data:/data/db_progresso  # Persist MongoDB data
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=example
+    networks:
+      - db-network-mongo
+
+volumes:
+  mongodb-data:
+    driver: local
+
+networks:
+  db-network-mongo:
+    driver: bridge

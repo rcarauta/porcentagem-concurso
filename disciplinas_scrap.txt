@@ -1,0 +1,11 @@
+letras-portugues
+portugues
+
+direito-direito-constitucional
+direitoConstitucional
+
+direito-direito-administrativo
+direitoAdministrativo
+
+tecnologia-da-informacao-nocoes-de-informatica
+nocoesInformatica
